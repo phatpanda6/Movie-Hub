@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@400;700;900&display=swap");
+
+/* Apply the gradient background to html and body */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#80ffdb, #64dfdf, #48bfe3, #5390d9, #5e60ce);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Ensure body takes at least the full viewport height */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main section should grow to take the remaining space */
+main {
+  flex-grow: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.blue {
+  color: rgb(0, 107, 247);
+}
+
+.container {
+  padding: 50px 40px;
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.link__hover-effect {
+  position: relative;
+}
+.link__hover-effect:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.link__hover-effect:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  transition: all 300ms ease;
+}
+
+.link__hover-effect--black:after {
+  background-color: black;
+}
+
+.button__hover-effect:hover {
+  background-color: #0008ed;
+}
+
+/* 
+
+NAVIGATION
+
+*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.nav__icon--text {
+  align-items: center;
+  font-weight: 700;
+}
+
+.nav__anchor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__icon--text i {
+  margin-right: 12px;
+}
+
+.nav__icon--img {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.nav__link--list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link {
+  margin: 0 12px;
+  font-weight: 700;
+}
+
+.nav__link--contact {
+  padding: 10px 15px;
+  background-color: rgb(0, 107, 247);
+  border-radius: 20px;
+  color: white;
+  transition: all 300ms ease;
+}
+
+/*
+
+SEARCH BAR
+
+*/
+
+/* Search Bar Container */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Search Input */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px;
+  transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+}
+
+/* Search Button */
+.search-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+.search-btn i {
+  font-size: 18px;
+}
+
+/*
+
+MOVIES MAIN
+
+*/
+
+.movie__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 25%;
+  padding: 24px;
+}
+
+.movie__img--wrapper {
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+}
+
+.movie__img {
+  max-height: 380px;
+  transition: all 300ms ease;
+  cursor: not-allowed;
+  width: 100%;
+  height: auto;
+}
+
+.movie__title {
+  font-weight: 700;
+}
+
+.movie_year {
+  font-style: italic;
+}
+
+/* 
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #242424;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__logo {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.footer__link {
+  margin: 0 20px;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMART PHONES */
+
+@media (max-width: 768px) {
+  .movie {
+    width: 50%;
+  }
+}

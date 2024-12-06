@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Hub</title>
+    <link rel="stylesheet" href="movies.css" />
+    <script
+      src="https://kit.fontawesome.com/51dba350aa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <section class="landing-page">
+      <nav>
+        <figure class="nav__icon--text">
+          <a class="nav__anchor" href="index.html">
+            <dotlottie-player
+              src="https://lottie.host/46ced017-1354-4ce3-9125-7d5036c53aa3/tEInhCh5l5.lottie"
+              background="transparent"
+              speed="1"
+              style="width: 60px; height: 50px"
+              loop
+              autoplay
+            ></dotlottie-player>
+
+            <p><span class="blue">Movie</span> Hub</p>
+          </a>
+        </figure>
+
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="index.html"
+              class="link__hover-effect link__hover-effect--black"
+              >Homepage</a
+            >
+          </li>
+          <li class="nav__link nav__link--contact button__hover-effect">
+            <a href="" class="nav__link--anchor">Contact</a>
+          </li>
+          <li class="nav__link">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+
+    <section class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Search for movies..." />
+        <button class="search-btn">
+          <i class="fa-solid fa-search"></i>
+        </button>
+      </section>
+      
+
+    <main id="movies__main">
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="movie__header">
+              <h2 class="movie__header-title">Movies</h2>
+              <select id="filter">
+                <option value="NEW_TO_OLD">latest release</option>
+                <option value="OLD_TO_NEW">oldest release</option>
+                <option value="OLD_TO_NEW">type: movie</option>
+                <option value="OLD_TO_NEW">type: series</option>
+                <option value="OLD_TO_NEW">type: episode</option>
+              </select>
+            </div>
+            <div class="movies">
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img class="movie__img" src="assets/avengers.jpg" alt="" />
+                </figure>
+                <div class="movie__title">
+                  Captain America: The first Avenger
+                </div>
+                <div class="movie_year">2011</div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img class="movie__img" src="assets/avengers.jpg" alt="" />
+                </figure>
+                <div class="movie__title">
+                  Captain America: The first Avenger
+                </div>
+                <div class="movie_year">2011</div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img class="movie__img" src="assets/avengers.jpg" alt="" />
+                </figure>
+                <div class="movie__title">
+                  Captain America: The first Avenger
+                </div>
+                <div class="movie_year">2011</div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img class="movie__img" src="assets/avengers.jpg" alt="" />
+                </figure>
+                <div class="movie__title">
+                  Captain America: The first Avenger
+                </div>
+                <div class="movie_year">2011</div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img class="movie__img" src="assets/avengers.jpg" alt="" />
+                </figure>
+                <div class="movie__title">
+                  Captain America: The first Avenger
+                </div>
+                <div class="movie_year">2011</div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img class="movie__img" src="assets/avengers.jpg" alt="" />
+                </figure>
+                <div class="movie__title">
+                  Captain America: The first Avenger
+                </div>
+                <div class="movie_year">2011</div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img class="movie__img" src="assets/avengers.jpg" alt="" />
+                </figure>
+                <div class="movie__title">
+                  Captain America: The first Avenger
+                </div>
+                <div class="movie_year">2011</div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img class="movie__img" src="assets/avengers.jpg" alt="" />
+                </figure>
+                <div class="movie__title">
+                  Captain America: The first Avenger
+                </div>
+                <div class="movie_year">2011</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <figure>
+            <img class="footer__logo" src="./assets/logo.svg" alt="" />
+          </figure>
+          <ul class="footer__links">
+            <li class="footer__link">Github</li>
+            <li class="footer__link">LinkedIn</li>
+            <li class="footer__link">Email</li>
+          </ul>
+          <p class="footer__copyright">Copyright &copy; 2024 Alan Huang</p>
+        </div>
+      </div>
+    </footer>
+    <script src="movies.js"></script>
+  </body>
+</html>

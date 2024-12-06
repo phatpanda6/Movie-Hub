@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stock Prices</title>
+    <title>MovieHub</title>
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/51dba350aa.js"
@@ -23,24 +23,25 @@
       <nav>
         <figure class="nav__icon--text">
           <dotlottie-player
-            class="nav__icon--img"
-            src="https://lottie.host/3b1b7fc8-b4f0-47eb-8156-257cd6a7acdc/4j2P6EcihW.json"
+            src="https://lottie.host/46ced017-1354-4ce3-9125-7d5036c53aa3/tEInhCh5l5.lottie"
             background="transparent"
             speed="1"
-            style="width: 100%; height: 100%"
+            style="width: 60px; height: 50px"
             loop
             autoplay
           ></dotlottie-player>
 
-          <p><span class="blue">Stock</span> Nest</p>
+          <p><span class="blue">Movie</span> Hub</p>
         </figure>
 
         <ul class="nav__link--list">
           <li class="nav__link">
-            <a href="nav__link--anchor">Search for Stocks</a>
+            <a href="movies.html" class="link__hover-effect link__hover-effect--black"
+              >Search for Movies</a
+            >
           </li>
-          <li class="nav__link nav__link--contact">
-            <a href="nav__link--anchor">Contact</a>
+          <li class="nav__link nav__link--contact button__hover-effect">
+            <a href="" class="nav__link--anchor ">Contact</a>
           </li>
           <li class="nav__link">
             <i class="fa-solid fa-circle-half-stroke"></i>
@@ -51,12 +52,11 @@
         <div class="container">
           <div class="row">
             <h1 class="main__heading">
-              Welcome to <span class="blue">Stock</span> Nest: Your Home for
-              Real-Time Stock Prices
+              <span class="blue">Movie</span> Hub: Your Ultimate Movie Directory
             </h1>
             <figure class="main__image">
               <dotlottie-player
-                src="https://lottie.host/622d42c9-f218-48fa-89cd-397199ccfb3f/KswCq8TB7b.json"
+                src="https://lottie.host/cfdf0564-5d28-46d7-b76a-87fc7e523e35/woBjStDcu0.lottie"
                 background="transparent"
                 speed="1"
                 style="width: 300px; height: 300px"
@@ -64,16 +64,7 @@
                 autoplay
               ></dotlottie-player>
             </figure>
-            <div class="search-container">
-              <input
-                type="text"
-                class="search-input"
-                placeholder="Search for stocks..."
-              />
-              <button class="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div>
+            <button class="search-button button__hover-effect"><a href="movies.html">SEARCH</a></button>
           </div>
         </div>
       </section>
