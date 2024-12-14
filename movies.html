@@ -41,23 +41,25 @@
             >
           </li>
           <li class="nav__link nav__link--contact button__hover-effect">
-            <a href="" class="nav__link--anchor">Contact</a>
+            <a href="mailto:alan.huang5@gmail.com?" class="nav__link--anchor">Contact</a>
           </li>
-          <li class="nav__link">
-            <i class="fa-solid fa-circle-half-stroke"></i>
-          </li>
+          <!-- <li class="nav__link">
+            <i class="fa-solid fa-circle-half-stroke"></i>   WILL IMPLEMENT DARK MODE LATER
+          </li> -->
         </ul>
       </nav>
     </section>
 
-
     <section class="search-bar-container">
-        <input type="text" class="search-bar" placeholder="Search for movies..." />
-        <button class="search-btn">
-          <i class="fa-solid fa-search"></i>
-        </button>
-      </section>
-      
+      <input
+        type="text"
+        class="search-bar"
+        placeholder="Search for movies..."
+      />
+      <button class="search-btn">
+        <i class="fa-solid fa-search"></i>
+      </button>
+    </section>
 
     <main id="movies__main">
       <section>
@@ -65,18 +67,22 @@
           <div class="row">
             <div class="movie__header">
               <h2 class="movie__header-title">Movies</h2>
-              <select id="filter">
-                <option value="NEW_TO_OLD">latest release</option>
-                <option value="OLD_TO_NEW">oldest release</option>
-                <option value="OLD_TO_NEW">type: movie</option>
-                <option value="OLD_TO_NEW">type: series</option>
-                <option value="OLD_TO_NEW">type: episode</option>
-              </select>
+              <div class="movie__filter__wrapper">
+                <select id="filter">
+                  <option value="" disabled selected>Sort by:</option>
+                  <option value="NEW_TO_OLD">latest release</option>
+                  <option value="OLD_TO_NEW">oldest release</option>
+                </select>
+              </div>
             </div>
             <div class="movies">
               <div class="movie">
                 <figure class="movie__img--wrapper">
-                  <img class="movie__img" src="https://m.media-amazon.com/images/M/MV5BM2ZmNjQ2MzAtNDlhNi00MmQyLWJhZDMtNmJiMjFlOWY4MzcxXkEyXkFqcGc@._V1_SX300.jpg" alt="" />
+                  <img
+                    class="movie__img"
+                    src="https://m.media-amazon.com/images/M/MV5BM2ZmNjQ2MzAtNDlhNi00MmQyLWJhZDMtNmJiMjFlOWY4MzcxXkEyXkFqcGc@._V1_SX300.jpg"
+                    alt=""
+                  />
                 </figure>
                 <div class="movie__title">
                   Captain America: The first Avenger
@@ -96,9 +102,15 @@
             <img class="footer__logo" src="./assets/logo.svg" alt="" />
           </figure>
           <ul class="footer__links">
-            <li class="footer__link">Github</li>
-            <li class="footer__link">LinkedIn</li>
-            <li class="footer__link">Email</li>
+            <li class="footer__link">
+              <a class="link__hover-effect link__hover-effect--white" href="https://github.com/phatpanda6" target="_blank">Github</a>
+            </li>
+            <li class="footer__link">
+              <a class="link__hover-effect link__hover-effect--white" href="https://www.linkedin.com/in/alan-huang-943257244/" target="_blank">LinkedIn</a>
+            </li>
+            <li class="footer__link">
+              <a class="link__hover-effect link__hover-effect--white" href="mailto:alan.huang5@gmail.com?">Email</a>
+            </li>
           </ul>
           <p class="footer__copyright">Copyright &copy; 2024 Alan Huang</p>
         </div>

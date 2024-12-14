@@ -77,6 +77,10 @@ ul {
   background-color: black;
 }
 
+.link__hover-effect--white:after {
+  background-color: white;
+}
+
 .button__hover-effect:hover {
   background-color: #0008ed;
 }
@@ -135,7 +139,6 @@ nav {
   color: white;
   transition: all 300ms ease;
 }
-
 /*
 
 SEARCH BAR
@@ -233,34 +236,22 @@ select {
   position: relative;
 }
 
-.movie__img {
+.movie__img, .movie__placeholder {
   transition: all 300ms ease;
   cursor: not-allowed;
   object-fit: contain;
   max-width: 100%;
   max-height: 100%;
   margin: auto;
- 
 }
 
-
-
-
-.movie__img {
-    object-fit: fit;
-}
-
-.movie__placeholder {
-  font-size: 16px;
-  color: #555;
-  text-align: center;
+.movie__filter__wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
-  height: 100%;
-    width: 100%;
+  justify-content: center;
+  gap: 10px;
 }
+
 
 .movie__img:hover {
   transform: scale(1.04);
@@ -310,4 +301,58 @@ footer {
   .movie {
     width: 50%;
   }
+}
+
+
+/* Skeleton Loader Styles */
+.skeleton {
+  background-color: #e0e0e0; /* Light gray background */
+  background-image: linear-gradient(
+    90deg,
+    #e0e0e0 25%,
+    #f5f5f5 50%,
+    #e0e0e0 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes loading {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Skeleton Movie Card */
+.skeleton__movie {
+  width: 25%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton__movie--img {
+  height: 300px;
+  margin-bottom: 8px;
+}
+
+.skeleton__movie--title,
+.skeleton__movie--year {
+  height: 20px;
+  width: 80%;
+  margin: 10px auto;
+}
+
+
+/* Responsive Skeleton Loader */
+@media (max-width: 768px) {
+  .skeleton__movie {
+    width: 50%; /* 2 columns: each takes 50% */
+  }
+
+
 }

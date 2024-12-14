@@ -60,6 +60,9 @@ ul {
 .link__hover-effect--black:after {
   background-color: black;
 }
+.link__hover-effect--white:after {
+  background-color: white;
+}
 
 .button__hover-effect:hover {
   background-color: #0008ed;
@@ -146,16 +149,6 @@ LANDING PAGE
 
 
 
-
-
-
-
-
-
-
-
-
-/* Main content container should take up remaining space */
 .landing-page {
   height: 100vh;
 }
@@ -188,4 +181,25 @@ footer {
 
 .footer__link {
   margin: 0 20px;
+}
+
+/* 
+
+RESPONSIVE 
+
+*/
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .main__heading {
+    font-size: 40px;
+  }
+}
+
+/* Mobile Phones */
+
+@media (max-width: 576px) {
+  .main__heading {
+    font-size: 30px;
+  }
 }
