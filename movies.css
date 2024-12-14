@@ -356,3 +356,9 @@ footer {
 
 
 }
+
+@media (max-width: 576px) {
+  .search-bar-container {
+    margin: 0 auto;
+  }
+}
